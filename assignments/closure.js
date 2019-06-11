@@ -1,6 +1,13 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+const flavorTown = 'Diners';
+function guyFieri() {
+  const flavorTown2 = 'Drive-ins';
+  alert(`${flavorTown}, ${flavorTown2}, and Dives`);
+}
+
+guyFieri();
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
