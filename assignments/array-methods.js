@@ -91,12 +91,25 @@ console.log(ticketPriceTotal);
 // Now that you have used .forEach(), .map(), .filter(), and .reduce().  I want you to think of potential problems you could solve given the data set and the 5k fun run theme.  Try to create and then solve 3 unique problems using one or many of the array methods listed above.
 
 // Problem 1: Use .map() //
-// The event director needs all of the runners emails so that they can bombard everyone with spam emails. Push all the emails into a new array
+// The event director needs all of the runners emails and company names so that they can bombard everyone with spam emails accordingly. Push all the emails and companies into an array.
 let allEmails = [];
-runners.map(function(emails) {
-  allEmails.push(emails.email);
+runners.forEach(function(emails) {
+  allEmails.push(emails.email, emails.company_name);
 });
 console.log(allEmails);
 // Problem 2: Use .forEach //
-
+// First names need to be put in alphabetical order. Create a function that goes through the first names of the array and pushes them into a new array, and then puts them in alphabetical order.
+let aToZ = [];
+runners.map(function(alpha) {
+  aToZ.push(alpha.first_name);
+});
+console.log(aToZ.sort());
 // Problem 3: Use .filter() //
+// The director hates the letter C. make a function that goes through all the runners' first names and puts all the names that don't start with C in a new array.
+let noLetterC = [];
+runners.filter(function(letterC) {
+  if(letterC.first_name[0] !== "C") {
+    noLetterC.push(letterC.first_name);
+  }
+});
+console.log(noLetterC);
