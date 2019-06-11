@@ -47,16 +47,37 @@ last(items, function(end) {
 
 function sumNums(x, y, cb) {
   // sumNums adds two numbers (x, y) and passes the result to the callback.
+  return cb(x + y);
 }
+
+sumNums(1, 2, function(math) {
+  console.log(math);
+});
 
 function multiplyNums(x, y, cb) {
   // multiplyNums multiplies two numbers and passes the result to the callback.
+  return cb(x * y);
 }
+
+multiplyNums(1, 2, function(multiply) {
+  console.log(multiply);
+});
 
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
+  for(let i = 0; i < list.length; i++); {
+    if(item === true){
+      return cb(item);
+    } else {
+      return false;
+    }
+  }
 }
+
+contains('Pencil', items, function(check) {
+  console.log(check);
+});
 
 /* STRETCH PROBLEM */
 
