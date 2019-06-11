@@ -7,7 +7,7 @@ function guyFieri() {
   alert(`${flavorTown}, ${flavorTown2}, and Dives`);
 }
 
-guyFieri();
+// guyFieri();
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
